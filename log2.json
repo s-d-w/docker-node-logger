@@ -1,0 +1,7 @@
+{
+  "processName": "httpd",
+  "message": {
+    "level": "error",
+    "body": "404 not found"
+  }
+}

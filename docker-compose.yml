@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+
+  lb:
+    image: dockercloud/haproxy
+    links:
+      - app
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "80:80"     
+
+  app:
+    build: ./app
+    command: sh /app/start.sh    
+    volumes:
+      - ./app:/app        
+    links: 
+      - elasticsearch
+
+  elasticsearch:
+    image: elasticsearch
+    volumes:
+      - ./elasticsearch/data:/usr/share/elasticsearch/data

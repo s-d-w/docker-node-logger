@@ -1,0 +1,15 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "iobase",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "elasticsearch": "^12.0.1",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}

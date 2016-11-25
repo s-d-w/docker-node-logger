@@ -1,0 +1,7 @@
+{
+  "processName": "some Java app",
+  "message": {
+    "level": "error",
+    "body": "there is something wrong with the app"
+  }
+}
